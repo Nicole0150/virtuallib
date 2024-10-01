@@ -19,9 +19,8 @@ summary() {
   }
 
   static longestMovie(movies) {
-    return movies.reduce((longest, movie) => {
-      return (movie.duration > longest.duration) ? movie : longest;
-    });
+    
+    return movies.reduce((longest, movie) => movie.duration > longest.duration ? movie : longest);
   }
 }
 // don't change below
