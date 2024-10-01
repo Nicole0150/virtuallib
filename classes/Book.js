@@ -15,7 +15,7 @@ class Book extends Media {
         if (books.length === 0) {
           return null;
         }
-        let highestRatedBook = books[0];
+        let highestRatedBook = books[0]
     
         for (let i = 1; i < books.length; i++) {
           if (books[i].rating > highestRatedBook.rating) {
